@@ -1,8 +1,9 @@
-const App = () => {
+import Button from "@/components/Button/Button";
+
+export default function App() {
   return (
-    <h1 className="text-example bg-greenPormade">
-      Teste
-    </h1>
+    <Button className="font-semibold"> {/* Estilização personalizada do botão */}
+      Botão
+    </Button>
   )
 }
-export default App
