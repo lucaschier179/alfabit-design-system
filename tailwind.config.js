@@ -18,7 +18,6 @@ module.exports = {
         greenPormade: 'var(--greenPormade)',
         lightBlue: 'var(--lightBlue)',
         darkBlue: 'var(--darkBlue)',
-        lightRed: 'var(--lightRed)',
         red: 'var(--red)',
         lightOrange: 'var(--lightOrange)',
         orange: 'var(--orange)',
