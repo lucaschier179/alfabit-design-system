@@ -1,7 +1,8 @@
-export default function App() {
+const App = () => {
   return (
-    <>
-      <p>Teste</p>
-    </>
+    <h1 className="text-example bg-greenPormade">
+      Teste
+    </h1>
   )
 }
+export default App

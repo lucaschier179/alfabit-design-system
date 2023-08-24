@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --example: #FE2;
+  --greenPormade: #509D45;
+  --darkGreen: #427153;
+  --extraLightGreen: #1AF66F;
+  --lightGreen: #59E990;
+  --white: #FFFFFF;
+  --fontGray: #212121;
+  --orange: #D37B2A;
+  --yellow: #ebc603;
+  --red: #e23a49;
+  --black: #000000;
+  --navbar: #080808;
+  --borderGray: #FCF4F4;
+  --borderGreen: #025915;
+  --grayImageillustrative: #447652;
+  --placeholderDark: #999999;
+  --grayGradient: #CACACA;
+  --cardLight: #CDCDCD;
+  --backgroundDark: #212121;
+  --backgroundLight: #EAEAEA;
+  --cardBackgroundDark: #363636;
+  --borderInput: #808080;
+}
