@@ -2,31 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --black: #000000;
-  --white: #FFFFFF;
-  --darkGray: #292929;
-  --gray: #525252;
-  --extraLightGreen: #1AF66F;
-  --lightGreen: #59E990;
-  --darkGreen: #427153;
-  --greenPormade: #509D45;
-  --lightBlue: #5CAABC;
-  --darkBlue: #2874AE;
-  --red: #FE0019;
-  --lightOrange: #EB9C52;
-  --orange: #D37B2A;
-  --yellow: #EBC603;
-  --backgroundLight: #EAEAEA;
-  --backgroundDark: #212121;
-  --borderGray: #FCF4F4;
-  --borderGreen: #025915;
-  --borderInput: #808080;
-  --fontGray: #212121;
-  --cardLight: #CDCDCD;
-  --cardBackgroundDark: #363636;
-  --grayImageilustrative: #447652;
-  --grayGradient: #CACACA;
-  --placeholderDark: #999999;
-  --navbar: #080808;
+
+@layer base {
+  :root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --darkGray: #292929;
+    --gray: #525252;
+    --extraLightGreen: #1AF66F;
+    --lightGreen: #59E990;
+    --darkGreen: #427153;
+    --greenPormade: #509D45;
+    --lightBlue: #5CAABC;
+    --darkBlue: #2874AE;
+    --red: #FE0019;
+    --lightOrange: #EB9C52;
+    --orange: #D37B2A;
+    --yellow: #EBC603;
+    --backgroundLight: #EAEAEA;
+    --backgroundDark: #212121;
+    --borderGray: #FCF4F4;
+    --borderGreen: #025915;
+    --borderInput: #808080;
+    --fontGray: #212121;
+    --cardLight: #CDCDCD;
+    --cardBackgroundDark: #363636;
+    --grayImageilustrative: #447652;
+    --grayGradient: #CACACA;
+    --placeholderDark: #999999;
+    --navbar: #080808;
+  }
 }
