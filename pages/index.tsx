@@ -1,4 +1,5 @@
 import Button from "@/components/Button/Button";
+import LinkButton from "@/components/Link/LinkButton";
 
 export default function App() {
   return (
@@ -7,8 +8,11 @@ export default function App() {
         disabled
         className="disabled:bg-greenPormade/60"
       > {/* Estilização personalizada do botão */}
-        Botão 1
+        Botão
       </Button>
+      <LinkButton aria-disabled className="text-lime-200 aria-disabled:text-lime-500">
+        Clique Aqui
+      </LinkButton>
     </div>
   )
 }
