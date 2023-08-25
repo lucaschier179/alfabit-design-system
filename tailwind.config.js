@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: 'var(--black)',
+        black: ({ opacityValue }) => `rgba(var(--black), ${opacityValue})`, //Cor com opacidade
+        //black: 'var(--black)',
         white: 'var(--white)',
         darkGray: 'var(--darkGray)',
         gray: 'var(--gray)',
@@ -34,7 +35,7 @@ module.exports = {
         grayGradient: 'var(--grayGradient)',
         placeholderDark: 'var(--placeholderDark)',
         navbar: 'var(--navbar)',
-      }
+      },
     },
   },
   plugins: [],

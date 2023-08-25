@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --black: #000000;
+    --black: 0, 0, 0;
     --white: #FFFFFF;
     --darkGray: #292929;
     --gray: #525252;
