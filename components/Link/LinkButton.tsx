@@ -1,7 +1,7 @@
 import { AnchorHTMLAttributes, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode;
   disabled?: boolean;
 }

@@ -27,10 +27,12 @@ export default function App() {
           Testando o componente de tipografia
         </Typography>
       </div>
-      <Divider>
-        Testando Divider
-      </Divider>
-      <Divider />
+      <div>
+        <Divider>
+          Testando Divider
+        </Divider>
+        <Divider />
+      </div>
     </>
   )
 }

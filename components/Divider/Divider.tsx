@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { HTMLAttributes, ReactNode } from "react";
 
-interface DividerProps extends HTMLAttributes<HTMLDivElement> {
+export interface DividerProps extends HTMLAttributes<HTMLDivElement> {
   bgColor?: "light" | "dark" | "black";
   children?: ReactNode;
   className?: string;
