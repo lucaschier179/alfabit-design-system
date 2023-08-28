@@ -1,6 +1,7 @@
 import Button from "@/components/Button/Button";
 import { Input } from "@/components/Inputs/Inputs";
 import LinkButton from "@/components/Link/LinkButton";
+import Typography from "@/components/Typography/Typography";
 
 export default function App() {
   return (
@@ -19,6 +20,11 @@ export default function App() {
       <div className="flex flex-col justify-center items-center h-32 gap-4">
         <Input label="Cadastro:" className="" />
         {/* <InputOrTextArea className="w-80 disabled:bg-darkGreen/30" /> */}
+      </div>
+      <div>
+        <Typography>
+          Testando o componente de tipografia
+        </Typography>
       </div>
     </>
   )
