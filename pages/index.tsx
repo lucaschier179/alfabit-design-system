@@ -1,3 +1,4 @@
+import Box from "@/components/Box/Box";
 import Button from "@/components/Button/Button";
 import Divider from "@/components/Divider/Divider";
 import { Input } from "@/components/Inputs/Inputs";
@@ -33,6 +34,9 @@ export default function App() {
         </Divider>
         <Divider />
       </div>
+      <Box>
+        Testando componente Box
+      </Box>
     </>
   )
 }

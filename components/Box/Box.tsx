@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { HTMLAttributes, ReactNode } from "react";
 
 export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
@@ -5,6 +6,7 @@ export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   classname?: string;
   filledBackground?: boolean;
+  rounded?: boolean;
   type?: "primary" | "secondary" | "dark" | "alert" | "sucess" | "error";
 }
 
@@ -17,9 +19,16 @@ const boxClassMap = {
   error: "bg-error-100 text-error-100",
 }
 
-export default function Box({ children, classname, ...rest }: BoxProps) {
+export default function Box({ border = false, children, classname, filledBackground = false, rounded = false, type = "primary", ...rest }: BoxProps) {
+  const classes = classNames({
+    "rounded-md": rounded,
+    "border border-gray-100": border,
+    "bg-dark": filledBackground,
+    [boxClassMap[type]]: type
+  })
+
   return (
-    <div {...rest}>
+    <div className={classes} {...rest}>
       {children}
     </div>
   )
