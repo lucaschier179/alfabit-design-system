@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 type TypographyProps = {
   children: ReactNode;
+  className?: string;
   element?: keyof JSX.IntrinsicElements;
-  size?: "xs" | "sm" | "md" | "xl" | "title1" | "title2" | "title3";
-  variant?: "primary" | "secondary" | "tertiary";
 } & JSX.IntrinsicElements["p"];
 
 const variantClassMap = {
@@ -24,13 +24,13 @@ const variantClassMap = {
   },
 };
 
-export default function Typography({ children, element = "p", size = "md", variant = "primary", ...rest }: TypographyProps) {
+export default function Typography({ children, className, element = "p", ...rest }: TypographyProps) {
   const Element = element as any;
 
   return (
     <Element
       {...rest}
-      className={`${variantClassMap.variant[variant]} ${variantClassMap.size[size]} font-normal text-sm text-gray`}
+      className={twMerge(`font-normal text-sm text-gray`, className)}
     >
       {children}
     </Element>
