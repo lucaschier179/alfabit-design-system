@@ -1,4 +1,5 @@
 import Button from "@/components/Button/Button";
+import Divider from "@/components/Divider/Divider";
 import { Input } from "@/components/Inputs/Inputs";
 import LinkButton from "@/components/Link/LinkButton";
 import Typography from "@/components/Typography/Typography";
@@ -26,6 +27,10 @@ export default function App() {
           Testando o componente de tipografia
         </Typography>
       </div>
+      <Divider>
+        Testando Divider
+      </Divider>
+      <Divider />
     </>
   )
 }
