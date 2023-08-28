@@ -4,7 +4,6 @@ import { HTMLAttributes, ReactNode } from "react";
 export interface BoxProps extends HTMLAttributes<HTMLDivElement> {
   border?: boolean;
   children: ReactNode;
-  classname?: string;
   filledBackground?: boolean;
   rounded?: boolean;
   type?: "primary" | "secondary" | "dark" | "alert" | "sucess" | "error";
@@ -19,7 +18,7 @@ const boxClassMap = {
   error: "bg-error-100 text-error-100",
 }
 
-export default function Box({ border = false, children, classname, filledBackground = false, rounded = false, type = "primary", ...rest }: BoxProps) {
+export default function Box({ border = false, children, className, filledBackground = false, rounded = false, type = "primary", ...rest }: BoxProps) {
   const classes = classNames({
     "rounded-md": rounded,
     "border border-gray-100": border,

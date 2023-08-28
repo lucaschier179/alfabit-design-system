@@ -1,3 +1,4 @@
+import Avatar from "@/components/Avatar/Avatar";
 import Box from "@/components/Box/Box";
 import Button from "@/components/Button/Button";
 import Divider from "@/components/Divider/Divider";
@@ -42,6 +43,7 @@ export default function App() {
       <TextBlock>
 
       </TextBlock>
+      <Avatar />
     </>
   )
 }
