@@ -3,6 +3,7 @@ import Button from "@/components/Button/Button";
 import Divider from "@/components/Divider/Divider";
 import { Input } from "@/components/Inputs/Inputs";
 import LinkButton from "@/components/Link/LinkButton";
+import TextBlock from "@/components/TextBlock/TextBlock";
 import Typography from "@/components/Typography/Typography";
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         </Typography>
       </div>
       <div>
+        <Divider />
         <Divider>
           Testando Divider
         </Divider>
@@ -37,6 +39,9 @@ export default function App() {
       <Box>
         Testando componente Box
       </Box>
+      <TextBlock>
+
+      </TextBlock>
     </>
   )
 }
