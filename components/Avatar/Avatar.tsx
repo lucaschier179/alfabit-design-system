@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { HTMLAttributes } from "react";
-import { BiUser } from "react-icons/bi";
+import AvatarIcon from "./AvatarIcon";
+import AvatarImage from "./AvatarImage";
 
 export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl";
@@ -30,7 +31,8 @@ export default function Avatar({ children, className, size = "xs", ...rest }: Av
       )}
       {...rest}
     >
-      <BiUser className="absolute w-1/2 h-1/2" />
+      <AvatarIcon />
+      {/* <AvatarImage /> */}
     </div>
   )
 }
