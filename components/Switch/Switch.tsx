@@ -1,9 +1,9 @@
-import { Switch as HeadlessSwitch, type SwitchProps as HeadlessSwitchProps } from "@headlessui/react"
+import { Switch as HeadlessSwitch, type SwitchProps as HeadlessSwitchProps } from "@headlessui/react";
 import { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BiCheck } from "react-icons/bi";
 
-export interface SwitchProps {
+export interface SwitchProps extends HeadlessSwitchProps<any> {
   defaultEnable?: boolean;
   variant?: "common" | "contract";
   disabled?: boolean;
@@ -26,6 +26,9 @@ export default function Switch({ defaultEnable: enabledByDefault, variant = "com
       disabled={disabled}
       {...rest}
     >
+      <span>
+        Switch Toggle
+      </span>
       {variant === "common" ?
         <span />
         : null}
@@ -34,7 +37,7 @@ export default function Switch({ defaultEnable: enabledByDefault, variant = "com
           {enabled ? (
             <BiCheck aria-disabled={disabled} />
           ) : null}
-          {enabled || ( 
+          {enabled || (
             <AiOutlineCloseCircle aria-disabled={disabled} />
           )}
         </span>
