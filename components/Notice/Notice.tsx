@@ -4,7 +4,6 @@ import { AiOutlineCheckCircle, AiOutlineCloseCircle, AiOutlineInfoCircle } from 
 import { LuAlertTriangle } from "react-icons/lu";
 import Box from "../Box/Box";
 import Typography from "../Typography/Typography";
-import { error } from "console";
 
 export type NoticeProps = VariantProps<typeof noticeVariants> & {
   children?: ReactNode;
@@ -53,7 +52,7 @@ export default function Notice({ children, className, message, onClose, type, ..
         </Typography>
       </div>
       {children}
-      {onclose ? (
+      {onClose ? (
         <AiOutlineInfoCircle size={20} className="cursor-pointer" onClick={onClose} />
       ) : null}
     </Box>
