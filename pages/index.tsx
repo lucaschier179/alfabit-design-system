@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import Divider from "@/components/Divider/Divider";
 import { Input } from "@/components/Inputs/Inputs";
 import LinkButton from "@/components/Link/LinkButton";
+import Notice from "@/components/Notice/Notice";
 import TextBlock from "@/components/TextBlock/TextBlock";
 import Typography from "@/components/Typography/Typography";
 
@@ -45,6 +46,8 @@ export default function App() {
       <div className="flex items-center justify-center pt-4">
         <Avatar size="3xl" />
       </div>
+      <Notice type="alert" message="Teste componente Notice">
+      </Notice>
     </>
   )
 }
