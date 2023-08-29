@@ -43,7 +43,7 @@ export default function App() {
       <TextBlock>
 
       </TextBlock>
-      <Avatar />
+      <Avatar size="lg" />
     </>
   )
 }
