@@ -5,6 +5,7 @@ import Divider from "@/components/Divider/Divider";
 import { Input } from "@/components/Inputs/Inputs";
 import LinkButton from "@/components/Link/LinkButton";
 import Notice from "@/components/Notice/Notice";
+import Switch from "@/components/Switch/Switch";
 import TextBlock from "@/components/TextBlock/TextBlock";
 import Typography from "@/components/Typography/Typography";
 

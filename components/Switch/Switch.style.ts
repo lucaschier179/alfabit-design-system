@@ -28,4 +28,22 @@ export default ({ variant, enabled, disabled, ...rest }: SwitchProps) => {
     }
   )
   const containerClassses = containerVariant({ variant });
-}
+
+  const switchClasses = classNames(
+    "inline-block w-5 h-5 rounded-full tranform transition-transform duration-200 ease-in-out bg-white",
+    enabled ? "translate-x-[2.1rem]" : "translate-x"
+  );
+
+  const iconClasses = classNames(
+    "aria-disabled: text-font-disabled",
+    { "text-success": enabled ? !disabled : null },
+    { "text-error": !enabled ? !disabled : null },
+    { "text-alert": disabled },
+  );
+
+  return {
+    Icon: iconClasses,
+    Switch: switchClasses,
+    Container: containerClassses, 
+    }
+};
