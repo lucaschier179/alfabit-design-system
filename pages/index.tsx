@@ -49,6 +49,7 @@ export default function App() {
       </div>
       <Notice type="alert" message="Teste componente Notice">
       </Notice>
+      <Switch />
     </>
   )
 }

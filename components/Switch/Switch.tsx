@@ -36,7 +36,7 @@ export default function Switch({ defaultEnable: enabledByDefault, variant = "com
         <span className={style.Switch} />
         : null}
       {variant === "contract" ?
-        <span>
+        <span className={style.Switch}>
           {enabled ? (
             <BiCheck className={style.Icon} aria-disabled={disabled} />
           ) : null}

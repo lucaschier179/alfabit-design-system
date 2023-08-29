@@ -6,7 +6,7 @@ import { SwitchProps } from "./Switch";
 export default ({ variant, enabled, disabled, ...rest }: SwitchProps) => {
   const containerVariant = cva(
     classNames(
-      "flex inline-flex relative item-center h-6 w-16 rounded-full outline-none disabled:bg-disabled",
+      "flex inline-flex relative items-center h-6 w-14 rounded-full outline-none disabled:bg-disabled",
       { "pointer-events-none": disabled }
     ),
     {
