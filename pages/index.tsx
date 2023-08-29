@@ -41,7 +41,6 @@ export default function App() {
         Testando componente Box
       </Box>
       <TextBlock>
-
       </TextBlock>
       <div className="flex items-center justify-center pt-4">
         <Avatar size="3xl" />

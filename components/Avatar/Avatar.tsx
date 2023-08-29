@@ -4,6 +4,8 @@ import AvatarIcon from "./AvatarIcon";
 import AvatarImage from "./AvatarImage";
 
 export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
+  description?: string;
+  image?: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl";
 }
 
@@ -19,8 +21,14 @@ const avatarSizeMap = {
   "5xl": "w-20 h-20",
 }
 
-export default function Avatar({ children, className, size = "xs", ...rest }: AvatarProps) {
+export default function Avatar({ className, description = "", image, size = "xs", ...rest }: AvatarProps) {
   const avatarSizeClass = avatarSizeMap[size]
+
+  const avatarComponent = image ? (
+    <AvatarImage src={image} altDescription={description} />
+  ) : (
+    <AvatarIcon />
+  )
 
   return (
     <div
@@ -31,8 +39,7 @@ export default function Avatar({ children, className, size = "xs", ...rest }: Av
       )}
       {...rest}
     >
-      <AvatarIcon />
-      {/* <AvatarImage /> */}
+      {avatarComponent}
     </div>
   )
 }

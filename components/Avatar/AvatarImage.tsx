@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { ImgHTMLAttributes } from "react";
 
-export interface AvatarImageProps extends ImgHTMLAttributes<ImageBitmap> {
+export interface AvatarImageProps {
   src: string;
   altDescription: string | "";
 };
