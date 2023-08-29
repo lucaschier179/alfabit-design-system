@@ -43,7 +43,9 @@ export default function App() {
       <TextBlock>
 
       </TextBlock>
-      <Avatar size="lg" />
+      <div className="flex items-center justify-center pt-4">
+        <Avatar size="3xl" />
+      </div>
     </>
   )
 }
