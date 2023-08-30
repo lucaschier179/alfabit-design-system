@@ -11,7 +11,7 @@ import Typography from "@/components/Typography/Typography";
 
 export default function App() {
   return (
-    <>
+    <div className="flex flex-col justify-center w-4/5 h-screen mx-auto my-0">
       <div className="flex justify-center items-center h-32 gap-4">
         <Button
           disabled
@@ -49,7 +49,9 @@ export default function App() {
       </div>
       <Notice type="alert" message="Teste componente Notice">
       </Notice>
-      <Switch />
-    </>
+      <div className="flex flex-col justify-start gap-1 w-2/4">
+        <Switch variant="common" />
+      </div>
+    </div>
   )
 }

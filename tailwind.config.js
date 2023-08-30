@@ -18,6 +18,7 @@ module.exports = {
         greenPormade: '#509D45',
         lightBlue: '#5CAABC',
         darkBlue: '#2874AE',
+        darkBlueHover: '#2354C4',
         red: '#FE0019',
         lightOrange: '#EB9C52',
         orange: '#D37B2A',

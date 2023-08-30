@@ -9,17 +9,17 @@ export interface SwitchProps extends HeadlessSwitchProps<any> {
   variant?: "common" | "contract";
   disabled?: boolean;
   onChange?: (enabled: boolean) => void
-}
+};
 
 export default function Switch({ defaultEnable: enabledByDefault, variant = "common", disabled, onChange, ...rest }: SwitchProps) {
-  const [enabled, setEnabled] = useState(enabledByDefault)
-  const style = useStyle({ variant, enabled, disabled })
+  const [enabled, setEnabled] = useState(enabledByDefault);
+  const style = useStyle({ variant, enabled, disabled });
 
   function toggle() {
     const newState = !enabled
     setEnabled(newState)
     onChange?.(newState)
-  }
+  };
 
   return (
     <HeadlessSwitch
@@ -32,19 +32,19 @@ export default function Switch({ defaultEnable: enabledByDefault, variant = "com
       <span className="sr-only">
         Switch Toggle
       </span>
-      {variant === "common" ?
+      {variant === "common" &&
         <span className={style.Switch} />
-        : null}
-      {variant === "contract" ?
+      }
+      {variant === "contract" && (
         <span className={style.Switch}>
-          {enabled ? (
-            <BiCheck className={style.Icon} aria-disabled={disabled} />
-          ) : null}
+          {enabled && (
+            <BiCheck size={20} className={style.Icon} aria-disabled={disabled} />
+          )}
           {enabled || (
-            <AiOutlineCloseCircle className={style.Icon} aria-disabled={disabled} />
+            <AiOutlineCloseCircle size={20} className={style.Icon} aria-disabled={disabled} />
           )}
         </span>
-        : null}
+      )}
     </HeadlessSwitch>
-  )
-}
+  );
+};

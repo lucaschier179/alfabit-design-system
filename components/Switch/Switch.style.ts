@@ -13,37 +13,37 @@ export default ({ variant, enabled, disabled, ...rest }: SwitchProps) => {
       variants: {
         variant: {
           common: classNames(
-            { "bg-primary": enabled },
-            { "bg-primary hover:bg-primaryHover": !enabled },
+            { "bg-darkBlueHover": enabled },
+            { "bg-darkBlue": !enabled }
           ),
           contract: classNames(
-            { "bg-success": enabled },
-            { "bg-error": !enabled }
+            { "bg-borderGreen": enabled },
+            { "bg-red": !enabled }
           ),
         },
       },
       defaultVariants: {
         variant: "common",
       },
-    }
-  )
-  const containerClassses = containerVariant({ variant });
+    },
+  );
+  const containerClasses = containerVariant({ variant });
 
   const switchClasses = classNames(
-    "inline-block w-5 h-5 rounded-full tranform transition-transform duration-200 ease-in-out bg-white",
+    "inline-block w-5 h-5 rounded-full transform transition-transform duration-200 ease-in-out bg-white",
     enabled ? "translate-x-[2.1rem]" : "translate-x"
   );
 
   const iconClasses = classNames(
     "aria-disabled: text-font-disabled",
-    { "text-success": enabled ? !disabled : null },
-    { "text-error": !enabled ? !disabled : null },
-    { "text-alert": disabled },
+    { "text-borderGreen": enabled && !disabled },
+    { "text-red": !enabled && !disabled },
+    { "text-yellow": disabled },
   );
 
   return {
     Icon: iconClasses,
     Switch: switchClasses,
-    Container: containerClassses, 
-    }
+    Container: containerClasses,
+  }
 };
