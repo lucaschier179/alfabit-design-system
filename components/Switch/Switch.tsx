@@ -1,6 +1,6 @@
 import { Switch as HeadlessSwitch, type SwitchProps as HeadlessSwitchProps } from "@headlessui/react";
 import { useState } from "react";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import { BiCheck } from "react-icons/bi";
 import useStyle from "./Switch.style";
 
@@ -41,7 +41,7 @@ export default function Switch({ defaultEnable: enabledByDefault, variant = "com
             <BiCheck size={20} className={style.Icon} aria-disabled={disabled} />
           )}
           {enabled || (
-            <AiOutlineCloseCircle size={20} className={style.Icon} aria-disabled={disabled} />
+            <AiOutlineClose size={20} className={style.Icon} aria-disabled={disabled} />
           )}
         </span>
       )}

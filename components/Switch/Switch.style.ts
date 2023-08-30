@@ -31,7 +31,7 @@ export default ({ variant, enabled, disabled, ...rest }: SwitchProps) => {
 
   const switchClasses = classNames(
     "inline-block w-5 h-5 rounded-full transform transition-transform duration-200 ease-in-out bg-white",
-    enabled ? "translate-x-[2.1rem]" : "translate-x"
+    enabled ? "translate-x-[2.1rem]" : "translate-x-[0.1rem]"
   );
 
   const iconClasses = classNames(

@@ -49,8 +49,8 @@ export default function App() {
       </div>
       <Notice type="alert" message="Teste componente Notice">
       </Notice>
-      <div className="flex flex-col justify-start gap-1 w-2/4">
-        <Switch variant="common" />
+      <div className="flex flex-col justify-center py-4">
+        <Switch variant="contract" />
       </div>
     </div>
   )
